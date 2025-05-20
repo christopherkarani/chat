@@ -1,0 +1,89 @@
+{
+  "": {
+    "swift-dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/master.swiftdeps"
+  },
+  "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/ChatInputView.swift": {
+    "dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatInputView.d",
+    "object": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatInputView.swift.o",
+    "swiftmodule": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatInputView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatInputView.swiftdeps"
+  },
+  "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/ChatView.swift": {
+    "dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatView.d",
+    "object": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatView.swift.o",
+    "swiftmodule": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatView.swiftdeps"
+  },
+  "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/ChatViewModel.swift": {
+    "dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatViewModel.d",
+    "object": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatViewModel.swift.o",
+    "swiftmodule": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatViewModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatViewModel.swiftdeps"
+  },
+  "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/KeyboardReadable.swift": {
+    "dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/KeyboardReadable.d",
+    "object": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/KeyboardReadable.swift.o",
+    "swiftmodule": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/KeyboardReadable~partial.swiftmodule",
+    "swift-dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/KeyboardReadable.swiftdeps"
+  },
+  "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/MessageBubbleView.swift": {
+    "dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/MessageBubbleView.d",
+    "object": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/MessageBubbleView.swift.o",
+    "swiftmodule": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/MessageBubbleView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/MessageBubbleView.swiftdeps"
+  },
+  "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/Swift Chat/ChatInputView.swift": {
+    "dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatInputView.d",
+    "object": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatInputView.swift.o",
+    "swiftmodule": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatInputView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatInputView.swiftdeps"
+  },
+  "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/Swift Chat/ChatView.swift": {
+    "dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatView.d",
+    "object": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatView.swift.o",
+    "swiftmodule": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatView.swiftdeps"
+  },
+  "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/Swift Chat/ChatViewModel.swift": {
+    "dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatViewModel.d",
+    "object": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatViewModel.swift.o",
+    "swiftmodule": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatViewModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ChatViewModel.swiftdeps"
+  },
+  "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/Swift Chat/ContentView.swift": {
+    "dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ContentView.d",
+    "object": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ContentView.swift.o",
+    "swiftmodule": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/ContentView.swiftdeps"
+  },
+  "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/Swift Chat/Swift_ChatApp.swift": {
+    "dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatApp.d",
+    "object": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatApp.swift.o",
+    "swiftmodule": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatApp.swiftdeps"
+  },
+  "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/Swift ChatTests/Swift_ChatTests.swift": {
+    "dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatTests.d",
+    "object": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatTests.swift.o",
+    "swiftmodule": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatTests.swiftdeps"
+  },
+  "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/Swift ChatUITests/Swift_ChatUITests.swift": {
+    "dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatUITests.d",
+    "object": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatUITests.swift.o",
+    "swiftmodule": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatUITests~partial.swiftmodule",
+    "swift-dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatUITests.swiftdeps"
+  },
+  "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/Swift ChatUITests/Swift_ChatUITestsLaunchTests.swift": {
+    "dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatUITestsLaunchTests.d",
+    "object": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatUITestsLaunchTests.swift.o",
+    "swiftmodule": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatUITestsLaunchTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/Swift_ChatUITestsLaunchTests.swiftdeps"
+  },
+  "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/SwiftChatApp.swift": {
+    "dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/SwiftChatApp.d",
+    "object": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/SwiftChatApp.swift.o",
+    "swiftmodule": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/SwiftChatApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/SwiftChatApp.swiftdeps"
+  }
+}

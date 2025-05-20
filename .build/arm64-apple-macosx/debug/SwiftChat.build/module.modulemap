@@ -1,0 +1,4 @@
+module SwiftChat {
+    header "/Users/chriskarani/Documents/XCodeProjects/Swift Chat/.build/arm64-apple-macosx/debug/SwiftChat.build/SwiftChat-Swift.h"
+    requires objc
+}
