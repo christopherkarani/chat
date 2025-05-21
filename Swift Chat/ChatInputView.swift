@@ -7,112 +7,95 @@ struct ChatInputView: View {
     
     /// Design constants
     private struct Constants {
-        static let cornerRadius: CGFloat = 25
-        static let minHeight: CGFloat = 50
+        static let cornerRadius: CGFloat = 20
+        static let minInputHeight: CGFloat = 40
+        static let maxInputHeight: CGFloat = 120
         static let horizontalPadding: CGFloat = 16
-        static let verticalPadding: CGFloat = 8
-        static let backgroundColor = Color(UIColor.systemGray6)
+        static let verticalPadding: CGFloat = 12
+        static let textPadding: CGFloat = 16
+        static let backgroundColor = Color(UIColor.secondarySystemBackground)
         static let placeholderText = "Ask anything"
         static let placeholderColor = Color(UIColor.placeholderText)
-        static let bottomPadding: CGFloat = 30 // For home indicator area
-        static let iconSize: CGFloat = 24
-        static let iconColor = Color.gray
+        
+        // Shadow properties
+        static let shadowColor = Color.black.opacity(0.05)
+        static let shadowRadius: CGFloat = 3
+        static let shadowX: CGFloat = 0
+        static let shadowY: CGFloat = 2
     }
     
     @FocusState private var isInputFocused: Bool
     
     var body: some View {
         VStack(spacing: 0) {
-            // Main input row
-            HStack(spacing: 16) {
-                // Attachment button
-                Button(action: {
-                    // Placeholder for attachment functionality
-                }) {
-                    Image(systemName: "paperclip")
-                        .font(.system(size: 20))
-                        .foregroundColor(Constants.iconColor)
-                }
-                .frame(width: Constants.iconSize, height: Constants.iconSize)
-                
-                // Input field
+            // Top separator line
+            Divider()
+            
+            HStack {
+                // Text input field with improved styling
                 ZStack(alignment: .leading) {
+                    // Background with shadow
+                    RoundedRectangle(cornerRadius: Constants.cornerRadius)
+                        .fill(Constants.backgroundColor)
+                        .shadow(
+                            color: Constants.shadowColor,
+                            radius: Constants.shadowRadius,
+                            x: Constants.shadowX,
+                            y: Constants.shadowY
+                        )
+                    
+                    // Placeholder text
                     if text.isEmpty {
                         Text(Constants.placeholderText)
                             .foregroundColor(Constants.placeholderColor)
-                            .padding(.leading, 5)
+                            .padding(.leading, Constants.textPadding)
                     }
                     
-                    TextField("", text: $text)
-                        .focused($isInputFocused)
-                        .padding(.vertical, 8)
-                        .padding(.horizontal, 5)
-                }
-                .frame(height: Constants.minHeight)
-                .frame(maxWidth: .infinity)
-                
-                // Microphone button for empty text or send button for non-empty text
-                Group {
-                    if text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-                        Button(action: {
-                            // Placeholder for microphone functionality
-                        }) {
-                            Image(systemName: "mic.fill")
-                                .font(.system(size: 20))
-                                .foregroundColor(Constants.iconColor)
-                        }
-                    } else {
-                        Button(action: onSend) {
-                            Image(systemName: "arrow.up.circle.fill")
-                                .font(.system(size: 22, weight: .semibold))
-                                .foregroundColor(.black)
+                    // Actual text input with send button integrated to the right
+                    HStack {
+                        TextField("", text: $text)
+                            .focused($isInputFocused)
+                            .padding(.leading, Constants.textPadding)
+                            .padding(.trailing, 8)
+                            .padding(.vertical, 10)
+                        
+                        // Send button only shows when text is present
+                        if !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                            Button(action: {
+                                onSend()
+                                isInputFocused = true // Keep keyboard open after sending
+                            }) {
+                                Image(systemName: "arrow.up.circle.fill")
+                                    .resizable()
+                                    .frame(width: 24, height: 24)
+                                    .foregroundColor(.blue)
+                                    .padding(.trailing, 12)
+                            }
+                            .transition(.opacity)
                         }
                     }
                 }
-                .frame(width: Constants.iconSize, height: Constants.iconSize)
+                .frame(height: Constants.minInputHeight)
             }
             .padding(.horizontal, Constants.horizontalPadding)
             .padding(.vertical, Constants.verticalPadding)
             .background(Color(UIColor.systemBackground))
             
-            // Home indicator area padding
-            Rectangle()
-                .fill(Color.clear)
-                .frame(height: Constants.bottomPadding)
+            // Add home indicator area padding on iPhone X and later
+            Color.clear
+                .frame(height: 10)
                 .background(Color(UIColor.systemBackground))
         }
-        .overlay(
-            // Full-width rounded rectangle background for the input field
-            RoundedRectangle(cornerRadius: Constants.cornerRadius)
-                .stroke(Color(UIColor.separator), lineWidth: 0.5)
-                .background(Constants.backgroundColor.cornerRadius(Constants.cornerRadius))
-                .padding(.horizontal, Constants.horizontalPadding + 40) // Wider padding to exclude buttons
-                .padding(.vertical, Constants.verticalPadding)
-                .allowsHitTesting(false) // Don't block interaction with underlying controls
-        )
+        .animation(.easeInOut(duration: 0.2), value: !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
     }
 }
 
 struct ChatInputView_Previews: PreviewProvider {
     static var previews: some View {
-        ZStack {
-            Color(UIColor.systemBackground).edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                Spacer()
-                ChatInputView(text: .constant(""), onSend: {})
-            }
+        VStack {
+            Spacer()
+            ChatInputView(text: .constant(""), onSend: {})
+            ChatInputView(text: .constant("Hello there"), onSend: {})
         }
-        .previewDisplayName("Empty Input")
-        
-        ZStack {
-            Color(UIColor.systemBackground).edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                Spacer()
-                ChatInputView(text: .constant("What's the weather like?"), onSend: {})
-            }
-        }
-        .previewDisplayName("With Text")
     }
 } 
