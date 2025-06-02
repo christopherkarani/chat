@@ -2,11 +2,11 @@ import SwiftUI
 import Combine
 
 /// Protocol to make keyboard state readable
-protocol KeyboardReadable {
+public protocol KeyboardReadable {
     var keyboardPublisher: AnyPublisher<Bool, Never> { get }
 }
 
-extension KeyboardReadable {
+public extension KeyboardReadable {
     /// Publisher that reports keyboard visibility changes
     var keyboardPublisher: AnyPublisher<Bool, Never> {
         Publishers.Merge(
@@ -22,7 +22,7 @@ extension KeyboardReadable {
     }
 }
 
-extension View {
+public extension View {
     /// Applies common modifiers for keyboard avoidance
     func keyboardAdaptive() -> some View {
         self.modifier(KeyboardAdaptiveModifier())
@@ -30,10 +30,10 @@ extension View {
 }
 
 /// View modifier that adjusts for keyboard
-struct KeyboardAdaptiveModifier: ViewModifier {
+public struct KeyboardAdaptiveModifier: ViewModifier {
     @State private var keyboardHeight: CGFloat = 0
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .padding(.bottom, keyboardHeight)
             .onReceive(keyboardHeightPublisher) { keyboardHeight in
@@ -61,4 +61,4 @@ struct KeyboardAdaptiveModifier: ViewModifier {
         )
         .eraseToAnyPublisher()
     }
-} 
+}

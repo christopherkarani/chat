@@ -77,4 +77,4 @@ The interface can be previewed in Xcode using the preview providers in each view
 
 - iOS 15.0+
 - Xcode 13.0+
-- Swift 5.5+ # chat
+- Swift 5.5+ 

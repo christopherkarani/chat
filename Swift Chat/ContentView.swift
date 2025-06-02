@@ -7,15 +7,11 @@
 
 import SwiftUI
 
+/// Main content view serving as the app's entry point
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        // Direct to the ChatView which is our main interface
+        ChatView()
     }
 }
 
